@@ -1,0 +1,268 @@
+$bordePrueba: 1px solid black;
+$selectColor1:rgb(198, 244, 255);
+$hoverColor1:rgb(170, 214, 250);
+$selectColor2:rgb(255, 195, 195);
+$hoverColor2:rgb(247, 150, 150);
+$titleColor:rgb(219, 244, 245);
+$colorFondoDos:rgb(248, 247, 230);
+$colorFondoTres:rgb(236, 234, 215);
+$colorText:rgb(53, 53, 54);
+.body{
+    
+    width: 80%;
+    margin-top: 0%;
+    border-bottom:1px solid rgb(190, 194, 196) ;
+    .h2Selection{
+        text-align: center;
+        font-size: 30px;
+        background: $titleColor;
+        padding: 10px;
+    }
+    .selection{
+        display: flex;
+        justify-content: center; 
+        
+        
+        
+
+        .divSel{
+            
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            transition: 300ms;
+            h4{
+                margin: 0;
+                padding: 0;
+                position: relative;
+                z-index: 1;
+                font-weight:500 ;
+            }
+        }
+        a{
+           width: 20%;
+           margin: 2% 5%; 
+           height: 100px; 
+           text-align: center;
+           line-height: 100px;
+           cursor: pointer;
+           border-radius: 10px;
+           font-size: 22px;
+           text-decoration: none;
+           color: $colorText;
+           
+           .hoverEfect{
+               width: 100px;
+               height: 100px;
+               background: linear-gradient(to bottom, rgba(0, 195, 255, 0.76), rgba(14, 214, 241, 0.76)) ;
+               position: absolute;
+               top: 150px;
+               left: -150px;
+               border-radius: 100%;
+               transition: 300ms;
+           }
+            .hoverEfect2{
+                width: 100px;
+                height: 100px;
+                background: linear-gradient(to bottom, rgba(243, 73, 73, 0.76), rgba(149, 31, 247, 0.76)) ;
+                position: absolute;
+                top: 150px;
+                left: 150px;
+                border-radius: 100%;
+                transition: 300ms;
+            }
+        }
+        .selectionDiabetes{
+            background-color:$selectColor1 ;
+            
+            
+        }
+        .selectionDiabetes:hover{
+            box-shadow: 1px 1px 5px rgb(122, 125, 126);
+            .hoverEfect{
+                width: 400px;
+                height: 400px;
+                top: -70px;
+                left: -70px;
+            }
+
+        }
+        .selectionTension{
+            background-color: $selectColor2;
+        }
+        .selectionTension:hover{
+            box-shadow: 1px 1px 5px rgb(122, 125, 126);
+            .hoverEfect2{
+               
+                width: 400px;
+                height: 400px;
+                top: -70px;
+                left: -70px;
+            }
+        }
+    }
+}
+.containerNews{
+    padding-bottom:10px ;
+    border-bottom:1px solid rgb(190, 194, 196) ;
+    .h2News{
+        text-align: center;
+        height: 70px;
+        line-height: 70px;
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 40px;
+        background: linear-gradient(to bottom, rgba(245, 176, 119, 0.541), rgba(255, 241, 51, 0.507)) ;
+    }
+    .newsText{
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        padding: 20px;height: 50px;
+        border-left: 2px solid rgba(250, 220, 121, 0.76);
+  
+    }
+    .imgDescriptionNews{
+        margin: auto;
+        margin-top: 25px;
+        width: 70%;
+        overflow: hidden;
+
+        
+    }
+}
+.containerAboutUs{
+    h1{
+        text-align: center;
+    }
+    .containerAboutInfo{
+        display:  flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 3%;
+        .divInfo{
+            text-align: center;
+            width: 60%;
+            background-color: $colorFondoDos;
+            border-radius: 10px;
+            h2{
+                text-align: center;
+            }
+            
+        }
+        .origin{
+            margin: auto;
+            margin-top: 1%;
+            margin-right: 0%;
+        }
+    }
+
+    .containerMembers{
+        display: flex;
+        
+        justify-content: space-evenly;
+        h3{
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+            padding: 0%;
+            margin: 0%;
+            text-align: center;
+            margin-bottom: 2%;
+        }
+        .member{
+            
+            width: 25%;
+            img{
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+    
+}
+.sectionInformation{
+    
+    width: 100%;
+    margin: 15px 0;
+    text-align: center;
+    .titleMain{
+        height: 100px;
+        background: $titleColor ;
+        line-height: 100px;
+    }
+    h3{
+        
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 10px; 
+        width: 80%;
+        margin: auto;
+    }
+    .pInfo{
+        width: 80%;
+        margin: auto;
+        margin-top: 25px;
+        text-align: center;
+    }
+    .imgDescription{
+        margin: auto;
+        margin-top: 25px;
+        width: 70%;
+        overflow: hidden;
+
+        
+    }
+    
+
+    //tension
+    .artTen{
+    h2{
+        text-align: center;
+        background: $selectColor1;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .containerTension{
+        padding: 3%;
+        .divInfo{
+            text-align: left;
+            width: 80%;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            h3{
+                text-align: center;
+                background: $selectColor1;
+                width: 70%;
+                margin: auto;
+            }
+            
+        }
+        
+        }
+       
+        
+    }
+    .sintomas{
+            
+        padding: 0;
+        width: 70%;
+        margin: auto;
+        list-style: inside;
+        text-align: left;
+        li{
+
+            margin-top: 3px;
+            margin-bottom: 3px;
+        };
+    }
+    
+}

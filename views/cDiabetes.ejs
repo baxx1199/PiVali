@@ -1,0 +1,61 @@
+<%- include layouts/header.ejs %>
+<div class="sectionInformation">
+    <h1 class="titleMain">Diabetes</h1>
+    <article class="articleinfo">
+        <h2>Analisis de glucosa</h2>
+        <p class="pInfo">
+            Para utilizar un medidor de glucosa habrá que tomarle una pequeña gota de sangre del dedo. A esto se llama “glucemia capilar”<br>
+            en el siguiente video se explica como realizar la prueba
+            
+        </p>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ghvihd6iQ7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        
+        <p class="pInfo">
+            Una vez realizada la prueba ingrese el valor obtenido en el siguiente <br> formulario asi podra tener un registro de los niveles de glucosa.
+            
+        </p>
+        
+    </article>
+    <hr>
+    
+    <div class="takeD">
+        <form action="/control_Diabetes" method="POST">
+            <label for="glucosa"></label>
+            <input type="text" name="glucosa" placeholder="Glucosa">
+            <br>
+            
+            <button>validar</button>
+        </form>
+    </div>
+    
+    
+</div>
+ 
+ <div class="tDatos">
+
+
+    <table>
+        <caption>Signos registrados</caption>
+        <thead class="header_table">
+            <th>#</th>
+            <th>Signos</th>
+            <th>Fecha</th> 
+        </thead>
+        <tbody>
+            <% if (dd){ %>
+                <%for(var i = 0; i< dd.length; i++){%>
+                    
+                    <tr>
+                        <td><%= (i+1) %></td> 
+                        <td><%= dd[i].glucosa +" mg/dl" %></td>
+                        <td><%= new Date(dd[i].fecha) %></td> 
+                    </tr>
+                <% } %>
+            <% } %>    
+        </tbody>
+    </table>
+</div> 
+
+<%- include layouts/footer.ejs %>

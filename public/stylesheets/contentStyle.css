@@ -1,0 +1,284 @@
+.body {
+  width: 80%;
+  margin-top: 0%;
+  border-bottom: 1px solid #bec2c4;
+}
+
+.body .h2Selection {
+  text-align: center;
+  font-size: 30px;
+  background: #dbf4f5;
+  padding: 10px;
+}
+
+.body .selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body .selection .divSel {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.body .selection .divSel h4 {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  font-weight: 500;
+}
+
+.body .selection a {
+  width: 20%;
+  margin: 2% 5%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 22px;
+  text-decoration: none;
+  color: #353536;
+}
+
+.body .selection a .hoverEfect {
+  width: 100px;
+  height: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 195, 255, 0.76)), to(rgba(14, 214, 241, 0.76)));
+  background: linear-gradient(to bottom, rgba(0, 195, 255, 0.76), rgba(14, 214, 241, 0.76));
+  position: absolute;
+  top: 150px;
+  left: -150px;
+  border-radius: 100%;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.body .selection a .hoverEfect2 {
+  width: 100px;
+  height: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 73, 73, 0.76)), to(rgba(149, 31, 247, 0.76)));
+  background: linear-gradient(to bottom, rgba(243, 73, 73, 0.76), rgba(149, 31, 247, 0.76));
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  border-radius: 100%;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.body .selection .selectionDiabetes {
+  background-color: #c6f4ff;
+}
+
+.body .selection .selectionDiabetes:hover {
+  -webkit-box-shadow: 1px 1px 5px #7a7d7e;
+          box-shadow: 1px 1px 5px #7a7d7e;
+}
+
+.body .selection .selectionDiabetes:hover .hoverEfect {
+  width: 400px;
+  height: 400px;
+  top: -70px;
+  left: -70px;
+}
+
+.body .selection .selectionTension {
+  background-color: #ffc3c3;
+}
+
+.body .selection .selectionTension:hover {
+  -webkit-box-shadow: 1px 1px 5px #7a7d7e;
+          box-shadow: 1px 1px 5px #7a7d7e;
+}
+
+.body .selection .selectionTension:hover .hoverEfect2 {
+  width: 400px;
+  height: 400px;
+  top: -70px;
+  left: -70px;
+}
+
+.containerNews {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #bec2c4;
+}
+
+.containerNews .h2News {
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 176, 119, 0.541)), to(rgba(255, 241, 51, 0.507)));
+  background: linear-gradient(to bottom, rgba(245, 176, 119, 0.541), rgba(255, 241, 51, 0.507));
+}
+
+.containerNews .newsText {
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 20px;
+  height: 50px;
+  border-left: 2px solid rgba(250, 220, 121, 0.76);
+}
+
+.containerNews .imgDescriptionNews {
+  margin: auto;
+  margin-top: 25px;
+  width: 70%;
+  overflow: hidden;
+}
+
+.containerAboutUs h1 {
+  text-align: center;
+}
+
+.containerAboutUs .containerAboutInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 3%;
+}
+
+.containerAboutUs .containerAboutInfo .divInfo {
+  text-align: center;
+  width: 60%;
+  background-color: #f8f7e6;
+  border-radius: 10px;
+}
+
+.containerAboutUs .containerAboutInfo .divInfo h2 {
+  text-align: center;
+}
+
+.containerAboutUs .containerAboutInfo .origin {
+  margin: auto;
+  margin-top: 1%;
+  margin-right: 0%;
+}
+
+.containerAboutUs .containerMembers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.containerAboutUs .containerMembers h3 {
+  text-align: center;
+}
+
+.containerAboutUs .containerMembers ul {
+  list-style: none;
+  padding: 0%;
+  margin: 0%;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.containerAboutUs .containerMembers .member {
+  width: 25%;
+}
+
+.containerAboutUs .containerMembers .member img {
+  display: block;
+  margin: auto;
+}
+
+.sectionInformation {
+  width: 100%;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.sectionInformation .titleMain {
+  height: 100px;
+  background: #dbf4f5;
+  line-height: 100px;
+}
+
+.sectionInformation h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+}
+
+.sectionInformation .pInfo {
+  width: 80%;
+  margin: auto;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.sectionInformation .imgDescription {
+  margin: auto;
+  margin-top: 25px;
+  width: 70%;
+  overflow: hidden;
+}
+
+.sectionInformation .artTen h2 {
+  text-align: center;
+  background: #c6f4ff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.sectionInformation .artTen .containerTension {
+  padding: 3%;
+}
+
+.sectionInformation .artTen .containerTension .divInfo {
+  text-align: left;
+  width: 80%;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sectionInformation .artTen .containerTension .divInfo h3 {
+  text-align: center;
+  background: #c6f4ff;
+  width: 70%;
+  margin: auto;
+}
+
+.sectionInformation .sintomas {
+  padding: 0;
+  width: 70%;
+  margin: auto;
+  list-style: inside;
+  text-align: left;
+}
+
+.sectionInformation .sintomas li {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+/*# sourceMappingURL=contentStyle.css.map */

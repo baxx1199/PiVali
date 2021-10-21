@@ -1,0 +1,88 @@
+.body {
+  width: 80%;
+  margin: auto;
+  color: #353536;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.headerNav {
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 195, 255, 0.76)), to(rgba(14, 214, 241, 0.76)));
+  background: linear-gradient(to bottom, rgba(0, 195, 255, 0.76), rgba(14, 214, 241, 0.76));
+  height: 120px;
+}
+
+.headerNav .h1Header {
+  height: 60%;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 70px;
+}
+
+.headerNav .menuHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 38%;
+  background: rgba(194, 239, 241, 0.925);
+}
+
+.headerNav .menuHead .liMain {
+  position: relative;
+  padding: 0 20px;
+  cursor: pointer;
+  width: 10%;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
+.headerNav .menuHead a {
+  text-decoration: none;
+  color: #353536;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.headerNav .menuHead .liMain:hover {
+  background-color: #b9e6e9;
+  border-bottom: 3px #7098f0 solid;
+}
+
+.headerNav .menuHead .liMain:hover .subMenu {
+  visibility: visible;
+}
+
+.headerNav .menuHead .subMenu {
+  list-style: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  visibility: hidden;
+  background: rgba(194, 239, 241, 0.925);
+  left: 0px;
+  top: 109%;
+}
+
+.headerNav .menuHead .subMenu .liSon:hover {
+  background-color: #b9e6e9;
+  border-bottom: 3px #7098f0 solid;
+}
+
+.headerNav .menuHead .homeIcon {
+  line-height: 50px;
+  font-size: 30px;
+}
+
+.headerNav .menuHead .optionsIcon {
+  line-height: 50px;
+  font-size: 30px;
+}
+/*# sourceMappingURL=headerStyle.css.map */

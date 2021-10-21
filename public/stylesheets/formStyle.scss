@@ -1,0 +1,27 @@
+$formBackground:rgba(146, 233, 221, 0.384);
+$secondColorForm:rgba(183, 190, 190, 0.5);
+.takeTension, .takeD{
+    background:$formBackground;
+    width: 60%;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 3%;
+    input{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+        width: 40%;
+        height: 40px;
+    }
+    button{
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height: 40px;
+        width: 20%;
+        border: 0;
+        background:$secondColorForm;
+        cursor: pointer;
+    }
+}

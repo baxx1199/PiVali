@@ -1,0 +1,72 @@
+<%- include layouts/header.ejs %>
+<div class="sectionInformation">
+    <h1 class="titleMain">Tension</h1>
+    <article class="articleinfo">
+        <h2>Toma de tension</h2>
+        <p class="pInfo">
+            El tensiometro es una forma rapida y sencilla de tomar la tencion en casa <br>
+            como se puede observar en le siguiente video.
+            <br>
+            Una vez toma la tension ingresa los datos en el siguiente <br>
+            formulario para llevar el registro
+        </p>
+        <div class="imgDescription">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gV-Q1kmHj1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <br>
+            <br>
+            <img src="/images/tensiometro.jpg" width="550" height="400" alt="">
+        </div>
+        
+        
+    </article>
+    <hr>
+    
+    <div class="takeTension">
+        <form action="/control_Tension" id="formTension" method="POST">
+            <label for="sis"></label>
+            <input type="text" name="sis" id="sis" placeholder="Sistolica">
+            <br>
+            <label for="dis"></label>
+            <input type="text" name="dis" id="dis" placeholder="Distolica">
+            <br>
+            
+            <button type="submit">validar</button>
+        </form>
+    </div>
+    
+</div>
+
+
+
+
+<br>
+<hr>
+<br>
+ 
+
+ <div class="tDatos">
+
+
+    <table>
+        <caption>Signos registrados</caption>
+        <thead class="header_table">
+            <th>#</th>
+            <th>Signos</th>
+            <th>Fecha</th> 
+        </thead>
+        <tbody>
+            <% if (dt){ %>
+                <%for(var i = 0; i< dt.length; i++){%>
+                    <tr>
+                        <td><%= (i+1) %></td> 
+                        <td><%=  dt[i].presion_sistolica +" sis / " + dt[i].presion_diastolica +" dis " %></td>
+                        <td><%= dt[i].fecha %></td> 
+                    </tr>
+                <% } %>
+            <% } %>    
+        </tbody>
+    </table>
+</div> 
+
+<%- include layouts/footer.ejs %>

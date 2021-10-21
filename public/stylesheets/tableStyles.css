@@ -1,0 +1,35 @@
+.tDatos {
+  width: 60%;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.tDatos table {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.tDatos table caption {
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  background: #b6dceb;
+}
+
+.tDatos table th, .tDatos table tr {
+  margin: auto;
+  height: 40px;
+  padding: 10px;
+}
+
+.tDatos table th {
+  font-weight: 900;
+  border-bottom: 2px solid #b6dceb;
+}
+
+.tDatos table tr {
+  border-bottom: 2px solid rgba(69, 73, 75, 0.836);
+}
+/*# sourceMappingURL=tableStyles.css.map */
